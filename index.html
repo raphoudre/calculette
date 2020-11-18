@@ -12,69 +12,61 @@
 <body>
     <div class="container-fluid text-center">
         <h1>calculatrix-3000</h1>
-        <div class="d-flex align-items-center justify-content-center text-center">
-            
-            <div class="col-4 border border-dark mr-1">
+
+
+        <div class="col-12 border border-dark">
             <div class="row">
-                <div class="d-flex justify-content-center align-items-center">
-                    <button id="reset" type="button" class="btn btn-dark m-1">&nbsp;C&nbsp;</button>
-                    <button id="square" type="button" class="btn btn-danger m-1">&nbsp;²&nbsp;</button>
-                    <button id="division" type="button" class="btn btn-primary m-1">&nbsp;/&nbsp;</button>
-                    <button id="multiplication" type="button" class="btn btn-primary m-1">&nbsp;x&nbsp;</button>
-                    <input type="number" class="form-control text-center border-primary" name="firstCase" id="firstCase" required disabled>
-                    <p id="calculator" class="font-weight-bold m-1"></p>
-                    <input type="number" class="form-control text-center border-primary mr-1" name="secondCase" id="secondCase" disabled >
-                    
-                </div>
+                <button id="reset" type="button" class="btn btn-dark col-1">&nbsp;C&nbsp;</button>
+                <button id="square" type="button" class="btn btn-danger col-1">&nbsp;²&nbsp;</button>
+                <button id="division" type="button" class="btn btn-primary col-1">&nbsp;/&nbsp;</button>
+                <button id="multiplication" type="button" class="btn btn-primary col-1">&nbsp;x&nbsp;</button>
+                <input type="number" class="form-control text-center border-primary col-3" name="firstCase" id="firstCase"
+                    required disabled>
+                <p id="calculator" class="font-weight-bold col-1"></p>
+                <input type="number" class="form-control text-center border-primary col-3" name="secondCase" id="secondCase"
+                    disabled>
             </div>
-        
-        
+
+
             <div class="row">
-                <div class="d-flex justify-content-center align-items-center">
-                    <button id="seven" type="button" class="btn btn-outline-secondary m-1">&nbsp;7&nbsp;</button>
-                    <button id="eight" type="button" class="btn btn-outline-secondary m-1">&nbsp;8&nbsp;</button>
-                    <button id="nine" type="button" class="btn btn-outline-secondary m-1">&nbsp;9&nbsp;</button>
-                    <button id="less" type="button" class="btn btn-primary m-1">&nbsp;-&nbsp;</button>
-                    <p class="font-weight-bold ml-1">=</p>
-                    <input type="text" class="form-control invisible text-center ml-4" name="thirdCase" id="thirdCase" disabled>   
-                </div>
+                <button id="seven" type="button" class="btn btn-outline-secondary col-1">&nbsp;7&nbsp;</button>
+                <button id="eight" type="button" class="btn btn-outline-secondary col-1">&nbsp;8&nbsp;</button>
+                <button id="nine" type="button" class="btn btn-outline-secondary col-1">&nbsp;9&nbsp;</button>
+                <button id="less" type="button" class="btn btn-primary col-1">&nbsp;-&nbsp;</button>
+                <p class="font-weight-bold">=</p>
+                <input type="text" class="form-control invisible text-center col-4" name="thirdCase" id="thirdCase" disabled>
             </div>
-        
-        
+
+
             <div class="row">
-                <div class="d-flex justify-content-center align-items-center">
-                    <button id="four" type="button" class="btn btn-outline-secondary m-1">&nbsp;4&nbsp;</button>
-                    <button id="five" type="button" class="btn btn-outline-secondary m-1">&nbsp;5&nbsp;</button>
-                    <button id="six" type="button" class="btn btn-outline-secondary m-1">&nbsp;6&nbsp;</button>
-                    <button id="plus" type="button" class="btn btn-primary m-1">&nbsp;+&nbsp;</button>
-                    <p>derniers calculs :</p>
-                    
-                </div>
+                <button id="four" type="button" class="btn btn-outline-secondary col-1">&nbsp;4&nbsp;</button>
+                <button id="five" type="button" class="btn btn-outline-secondary col-1">&nbsp;5&nbsp;</button>
+                <button id="six" type="button" class="btn btn-outline-secondary col-1">&nbsp;6&nbsp;</button>
+                <button id="plus" type="button" class="btn btn-primary col-1">&nbsp;+&nbsp;</button>
+                <p class="col-5">derniers calculs :</p>
             </div>
-        
-        
+
+
             <div class="row">
-                <div class="d-flex justify-content-center align-items-center text-center">
-                    <button id="one" type="button" class="btn btn-outline-secondary m-1">&nbsp;1&nbsp;</button>
-                    <button id="two" type="button" class="btn btn-outline-secondary m-1">&nbsp;2&nbsp;</button>
-                    <button id="three" type="button" class="btn btn-outline-secondary m-1">&nbsp;3&nbsp;</button>
-                    <button id="m1" type="button" class="btn btn-primary m-1">m1</button>
-                    <input type="text" class="form-control text-center border-primary mr-1" name="memoCaseOne" id="memoCaseOne" disabled>
-                </div>
+                <button id="one" type="button" class="btn btn-outline-secondary col-1">&nbsp;1&nbsp;</button>
+                <button id="two" type="button" class="btn btn-outline-secondary col-1">&nbsp;2&nbsp;</button>
+                <button id="three" type="button" class="btn btn-outline-secondary col-1">&nbsp;3&nbsp;</button>
+                <button id="m1" type="button" class="btn btn-primary col-1">m1</button>
+                <input type="text" class="form-control text-center border-primary col-8" name="memoCaseOne" id="memoCaseOne"
+                    disabled>
             </div>
-        
-        
+
+
             <div class="row">
-                <div class="d-flex justify-content-center align-items-center">
-                    <button id="zero" type="button" class="btn btn-outline-secondary m-1">&nbsp;0&nbsp;</button>
-                    <button id="comma" type="button" class="btn btn-secondary m-1">&nbsp;,&nbsp;</button>
-                    <button id="equal" type="button" class="btn btn-primary m-1">&nbsp;=&nbsp;</button>
-                    <button id="m2" type="button" class="btn btn-primary m-1">m2</button>
-                    <input type="text" class="form-control text-center border-primary mr-1" name="memoCaseTwo" id="memoCaseTwo" disabled>
-                </div>
-            </div>
+                <button id="zero" type="button" class="btn btn-outline-secondary col-1">&nbsp;0&nbsp;</button>
+                <button id="comma" type="button" class="btn btn-secondary col-1">&nbsp;,&nbsp;</button>
+                <button id="equal" type="button" class="btn btn-primary col-1">&nbsp;=&nbsp;</button>
+                <button id="m2" type="button" class="btn btn-primary col-1">m2</button>
+                <input type="text" class="form-control text-center border-primary col-8" name="memoCaseTwo" id="memoCaseTwo"
+                    disabled>
             </div>
         </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
