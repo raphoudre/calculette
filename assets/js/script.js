@@ -191,16 +191,16 @@ square.onclick = function () {
     indicateur.innerText = "²";
     CalcCase = 1;
     let result = parseFloat(firstCase.value) * parseFloat(firstCase.value)
-    thirdCase.value = `= ${result}`;
+    thirdCase.value = result;
     thirdCase.classList.remove("invisible");
     CalcCase = 1;
     secondCase.value = "au carré";
     indicateur.innerText = ""
     if (m1.value=="") {
-        m1.value=`m1 = ${result}`;
+        m1.value=result;
     } else {
-        m2.value=`m2 = ${m1.value}`;
-        m1.value=`m1 = ${result}`;
+        m2.value=m1.value;
+        m1.value=result;
     }
 }
 
@@ -210,47 +210,47 @@ equal.onclick = function () {
         CalcCase = 1;
     } else if (operation == 1) {
         let result = parseFloat(firstCase.value) + parseFloat(secondCase.value)
-        thirdCase.value = `= ${result}`;
+        thirdCase.value = result;
         thirdCase.classList.remove("invisible");
         CalcCase = 1;
         if (m1.value=="") {
-            m1.value=`m1 = ${result}`;
+            m1.value=result;
         } else {
-            m2.value=`m2 = ${m1.value}`;
-            m1.value=`m1 = ${result}`;
+            m2.value=m1.value;
+            m1.value=result;
         }
     } else if (operation == 2) {
         let result = parseFloat(firstCase.value) - parseFloat(secondCase.value)
-        thirdCase.value = `= ${result}`;
+        thirdCase.value = result;
         thirdCase.classList.remove("invisible");
         CalcCase = 1;
         if (m1.value=="") {
-            m1.value=`m1 = ${result}`;
+            m1.value=result;
         } else {
-            m2.value=`m2 = ${m1.value}`;
-            m1.value=`m1 = ${result}`;
+            m2.value=m1.value;
+            m1.value=result;
         }
     } else if (operation == 3) {
         let result = parseFloat(firstCase.value) * parseFloat(secondCase.value)
-        thirdCase.value = `= ${result}`;
+        thirdCase.value = result;
         thirdCase.classList.remove("invisible");
         CalcCase = 1;
         if (m1.value=="") {
-            m1.value=`m1 = ${result}`;
+            m1.value=result;
         } else {
-            m2.value=`m2 = ${m1.value}`;
-            m1.value=`m1 = ${result}`;
+            m2.value=m1.value;
+            m1.value=result;
         }
     } else if (operation == 4) {
         let result = parseFloat(firstCase.value) / parseFloat(secondCase.value)
-        thirdCase.value = `= ${result}`;
+        thirdCase.value = result;
         thirdCase.classList.remove("invisible");
         CalcCase = 1;
         if (m1.value=="") {
-            m1.value=`m1 = ${result}`;
+            m1.value=result;
         } else {
-            m2.value=`m2 = ${m1.value}`;
-            m1.value=`m1 = ${result}`;
+            m2.value=m1.value;
+            m1.value=result;
         }
     }
 }
